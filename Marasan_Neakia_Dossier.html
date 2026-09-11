@@ -95,6 +95,16 @@
 
   .light-zone .section-num{ color:#8a5a26; }
   .light-zone h2, .light-zone h3{ color:var(--ink); }
+  /* Section 2 runs long enough to cross the gradient, so its headings carry their
+     own backing and stay legible wherever they land. */
+  .light-zone > h3{
+    display:inline-block;
+    color:#7d4f1f;
+    background:rgba(255,255,255,.62);
+    padding:5px 16px;
+    border-radius:999px;
+    margin:22px 0 10px;
+  }
   .light-zone p, .light-zone li{ color:var(--ink-soft); }
 
   .dusk-zone .section-num, .void-zone .section-num{ color:var(--violet-soft); }
@@ -310,9 +320,9 @@
         <div class="blade-caption" style="display:inline-block; background:rgba(255,255,255,0.55); padding:4px 14px; border-radius:999px; color:var(--ink) !important;">CLEAR LIGHT &middot; PURE DARKNESS</div>
       </div>
 
-      <div style="padding:14px 18px; border-radius:10px; background:rgba(255,255,255,0.55); margin-bottom:16px;">
-        <h3 style="margin:0 0 6px; color:var(--ink);">Off duty</h3>
-        <p style="margin:0; color:var(--ink); font-weight:500;">The armour comes off and something older tends to surface. Hair worn loose, dark lipstick, black lace and old fine jewellery instead of plate. It's a face almost no one in her current life has actually seen.</p>
+      <div style="margin-bottom:16px;">
+        <h3 style="display:inline-block; color:#7d4f1f; background:rgba(255,255,255,.62); padding:5px 16px; border-radius:999px; margin:22px 0 10px;">Off duty</h3>
+        <p style="margin:0; padding:14px 18px; border-radius:10px; background:rgba(255,255,255,0.55); color:var(--ink); font-weight:500;">The armour comes off and something older tends to surface. Hair worn loose, dark lipstick, black lace and old fine jewellery instead of plate. It's a face almost no one in her current life has actually seen.</p>
       </div>
 
       <div class="faces">
